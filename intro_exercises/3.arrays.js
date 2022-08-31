@@ -6,6 +6,9 @@
 const letters = ["a", "b", "c"];
 // show b in the console 
 
+//if you want to get an element of a given index, we use the square-bracket notation
+console.log('Exercise 1:', letters[1])
+
 
 // --------------------------------------
 // Exercise 2 - Array Positioning
@@ -13,6 +16,10 @@ const letters = ["a", "b", "c"];
 const friends = [];
 
 // What a lonely array. Add at least 3 friend objects to it without touching the line above.  
+friends.push('Hej')
+friends.push(23)
+friends.push('kat')
+
 
 
 // --------------------------------------
@@ -22,6 +29,16 @@ const significantMathNumbers = [0, 2.718, 3.14159, 1729];
 
 // You want to programmatically find where the number 1729 is in the array.
 // programmatically means that no finger counting allowed. There is a method for this (finding index based of value). 
+
+for (let index in significantMathNumbers){
+    //to displey the values og the propperties we use the dot-notation
+    //but when we do not know the values we use the square brackets, to displey the values
+    console.log('Exercise 3:',`the index ${index} has a value of ${significantMathNumbers[index]}`);
+}
+
+let index = significantMathNumbers.indexOf(1729)
+console.log(`ther index of 1729 is ${index}`)
+
 
 
 // --------------------------------------
@@ -33,13 +50,13 @@ const diet = ["tomato", "cucumber", "rocket"];
 
 
 
-
 // --------------------------------------
 // Exercise 5 - Remove element
 
 // Remove the LAST element of the array.
 // Don't remove by index. You know in advance that it's the last in the array because you are too full already. 
-
+const newDIet = delete diet['rocket']
+console.log('exercise 5:', newDIet)
 
 
 
@@ -47,7 +64,9 @@ const diet = ["tomato", "cucumber", "rocket"];
 // --------------------------------------
 // Exercise 6 - Copy array
 
-// You really like your daily diet from last exercise. Copy it to a new array called dinnerTray so you can give it to a friend.  
+// You really like your daily diet from last exercise. Copy it to a new array called dinnerTray so you can give it to a friend. 
+
+
 
 
 
@@ -69,6 +88,16 @@ const discardedNumbers = [];
 
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
+
+for(let element of numbers){
+    if (element>6 || element<0){
+        console.log(element)
+    }
+    else{
+        discardedNumbers.push(element)
+    }
+}
+
 
 // --------------------------------------
 
