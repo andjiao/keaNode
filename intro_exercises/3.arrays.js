@@ -19,6 +19,7 @@ const friends = [];
 friends.push('Hej')
 friends.push(23)
 friends.push('kat')
+console.log('EXercise 2:', friends)
 
 
 
@@ -48,17 +49,16 @@ const diet = ["tomato", "cucumber", "rocket"];
 
 // You are a programmer. In one line (one statement) insert hamburger, soda and pizza between the elements cucumber and rocket
 
-
+diet.splice(2,0, ' hamburger, soda and pizza');
+console.log('EXercise 4:', diet)
 
 // --------------------------------------
 // Exercise 5 - Remove element
 
 // Remove the LAST element of the array.
 // Don't remove by index. You know in advance that it's the last in the array because you are too full already. 
-const newDIet = delete diet['rocket']
-console.log('exercise 5:', newDIet)
-
-
+diet.splice(-1);
+console.log('EXercise 5:', diet)
 
 
 // --------------------------------------
@@ -66,8 +66,8 @@ console.log('exercise 5:', newDIet)
 
 // You really like your daily diet from last exercise. Copy it to a new array called dinnerTray so you can give it to a friend. 
 
-
-
+const dinnerTray = JSON.parse(JSON.stringify(diet));
+console.log('EXercise 6:', dinnerTray)
 
 
 // --------------------------------------
@@ -91,12 +91,14 @@ const discardedNumbers = [];
 
 for(let element of numbers){
     if (element>6 || element<0){
-        console.log(element)
+        console.log(element);
     }
     else{
-        discardedNumbers.push(element)
+        discardedNumbers.push(element);
     }
 }
+
+
 
 
 // --------------------------------------
