@@ -16,9 +16,19 @@ console.log('Exercise 1:', letters[1])
 const friends = [];
 
 // What a lonely array. Add at least 3 friend objects to it without touching the line above.  
-friends.push('Hej')
-friends.push(23)
-friends.push('kat')
+friends.push(person1 = {
+    name:'andrea',
+    age:23
+})
+friends.push(person2 = {
+    name:'Niels',
+    age:90
+})
+
+friends.push(person3 = {
+    name:'Alice',
+    age:1
+})
 console.log('EXercise 2:', friends)
 
 
@@ -76,6 +86,8 @@ console.log('EXercise 6:', dinnerTray)
 const lettersExpanded = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
+lettersExpanded.splice()
+
 
 
 
